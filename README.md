@@ -16,9 +16,9 @@ cd\
 
 c:
 
-cd C:\Users\\<userName>\\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Node.js
+cd C:\Users\<userName>\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Node.js
 
-C:\Users\\<username>\\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Node.js\Node.js command prompt.lnk
+C:\Users\<username>\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Node.js\Node.js command prompt.lnk
 
 mongo.exe
 
