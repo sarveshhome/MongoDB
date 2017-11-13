@@ -217,3 +217,104 @@ db.employess.insert(
 	
 
 ```
+
+
+```sh
+
+show dbs
+	use users
+	
+	Insert Data
+	----------------------
+	db.users.insert({
+	   name:"ali",
+	   age:18,
+	   status: "D",
+	   groups: ["politics","news"]
+	})
+	-------------
+	db.users.insert(
+   {
+      name: "sue",
+      age: 26,
+      status: "A"
+   })
+   -------------------
+   update Query
+   
+   db.users.update(
+   { age: { $gt: 18 } },
+   { $set: { status: "A" } },
+   { multi: true });
+   
+   
+   Remove
+   -------------
+   db.users.remove(
+   { status: "D" });
+   
+   
+  db.users.insert(
+  {
+     name: "sue",
+	 age:26,
+	 status:"A",
+	 groups:["news","sports"]
+  }
+  ); 
+   db.users.insert(
+  {
+     name: "lee",
+	 age:28,
+	 status:"A",
+	 groups:["news","software"]
+  }); 
+  
+   db.users.insert(
+  {
+     name: "jan",
+	 age:21,
+	 status:"B",
+	 groups:["news","software"]
+  }); 
+  
+  db.users.insert(
+  {
+     name: "Kai",
+	 age:38,
+	 status:"A",
+	 groups:["news","sports"]
+  }); 
+  
+   db.users.insert(
+  {
+     name: "sam",
+	 age:18,
+	 status:"C",
+	 groups:["news","sports"]
+  }); 
+  
+     db.users.insert(
+  {
+     name: "mel",
+	 age:38,
+	 status:"D",
+	 groups:["news","sports"]
+  }); 
+  
+     db.users.insert(
+  {
+     name: "ryan",
+	 age:31,
+	 status:"E",
+	 groups:["news","sports"]
+  }); 
+  
+  Find Query
+  --------------
+  db.users.find({});
+  db.users.find({age: { $gt :18}}).sort({age:1});
+   db.users.find({age: { $eq :18}}).sort({age:1});
+
+
+```
